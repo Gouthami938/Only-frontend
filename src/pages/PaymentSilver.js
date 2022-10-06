@@ -9,7 +9,7 @@ import axios from 'axios';
  import card from "./card.jpg";
 
 
-function Payment() {
+function PaymentSilver() {
 
 
   const navigate=useNavigate();
@@ -19,7 +19,7 @@ function Payment() {
   function redirectp()
   {
     
-    navigate('/Acceptlist')
+    navigate('/Silverlist')
     toast.success("Payment Done Successfuly")
   }
 
@@ -156,7 +156,7 @@ function Payment() {
         
           );
         }
-        export default Payment;
+        export default PaymentSilver;
         
         
         

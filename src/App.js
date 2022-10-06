@@ -16,7 +16,12 @@ import Acceptlist from './pages/Acceptlist';
 import Userdata from './pages/Userdata';
 import Payment from './pages/Payment';
 import SubmittedForm from './pages/SubmittedForm';
-
+import Platinum from './pages/Platinum';
+import Gold from './pages/Gold';
+import Silver from './pages/Silver';
+import PaymentSilver from './pages/PaymentSilver';
+import Silverlist from './pages/Silverlist';
+import Goldlist from './pages/Goldlist';
 
 function App() {
   return (
@@ -33,7 +38,13 @@ function App() {
     <Route path="/Acceptlist" element={<Acceptlist/>}/>
     <Route path="/Userdata" element={<Userdata/>}/>
     <Route path="/Payment" element={<Payment/>}/>
-    <Route path="SubmittedForm" element={<SubmittedForm/>}/>
+    <Route path="/SubmittedForm" element={<SubmittedForm/>}/>
+    <Route path="/Platinum" element={<Platinum/>}/>
+    <Route path="/Gold" element={<Gold/>}/>
+    <Route path="/Silver" element={<Silver/>}/>
+    <Route path="/PaymentSilver" element={<PaymentSilver/>}/>
+    <Route path="Silverlist" element={<Silverlist/>}/>
+    <Route path="Goldlist" element={<Goldlist/>}/>
    </Routes>
 
    </BrowserRouter>

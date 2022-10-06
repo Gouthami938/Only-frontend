@@ -28,9 +28,14 @@ function logout()
   navigate('/')
 }
 function platinum(){
-    navigate('/Payment')
+    navigate('/Platinum')
 }
-
+function Gold(){
+  navigate('/Gold')
+}
+function Silver(){
+  navigate('/Silver')
+}
     return(
 <div>
     <Navbar
@@ -85,8 +90,8 @@ navbar>
               </DropdownToggle>
               <DropdownMenu left>
                  <DropdownItem onClick={platinum}> Platinum</DropdownItem> 
-               <DropdownItem>Gold</DropdownItem>
-               <DropdownItem>Silver</DropdownItem>
+               <DropdownItem onClick={Gold}>Gold</DropdownItem>
+               <DropdownItem onClick={Silver}>Silver</DropdownItem>
                
                 
               </DropdownMenu>

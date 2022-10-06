@@ -6,7 +6,7 @@ import BaseUD from "../components/BaseUD";
 import {Table} from "reactstrap";
 
 
-function Acceptlist() {
+function Silverlist() {
     const [data,setData]=useState([]);
     useEffect(() => {
  async function fetchMyAPI(){
@@ -34,11 +34,10 @@ function Acceptlist() {
           <th>Id</th>
           <th>Name</th>
           <th>DOB</th>
-          {/* <th>Age</th> */}
-          <th>Place</th>
-          <th>Hobbies</th>
+          {/* <th>Place</th> */}
+          {/* <th>Hobbies</th> */}
           {/* <th>Gender</th> */}
-          <th>Image</th>
+          {/* <th>Image</th> */}
 
         </tr>
       </thead>
@@ -50,11 +49,10 @@ function Acceptlist() {
           <td>{item.id}</td>
           <td>{item.name}</td>
           <td>{item.date}</td>
-          {/* <td>{item.age}</td> */}
-          <td>{item.place}</td>
-          <td>{item.hobbies}</td>
+          {/* <td>{item.place}</td> */}
+          {/* <td>{item.hobbies}</td> */}
           {/* <td>{item.gender}</td> */}
-          <td><img src={item.image}/></td>
+          {/* <td><img src={item.image}/></td> */}
           <td><Button onClick={()=>toast.success("Accepted!")}>Accept</Button></td>
           <td><Button onClick={()=>toast("Declained!")}>Declaine</Button></td>
 
@@ -94,7 +92,7 @@ function Acceptlist() {
 
   
 
-export default Acceptlist;
+export default Silverlist;
 
 
 

@@ -42,7 +42,7 @@ const UserDetails=()=>{
            ){
                 toast("Please fill the details to go forward!!")
             }else if( response.status==200){
-                navigate('/Payment')
+                navigate('/SubmittedForm')
                 toast.success("Details Submited")
             }
                 
